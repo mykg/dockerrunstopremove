@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+   - name: start a centos:7 container
+     docker_container:
+       name: myc
+       image: centos:7
+       state: started
+       tty: yes
+       interactive: yes
